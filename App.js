@@ -13,6 +13,19 @@ client.on("ready", () => {
     console.log("ready...");
 });
 
+client.on("guildCreate", guild => {
+
+    let greetingChannel = "";
+    guild.channels.cache.forEach((channel) => {
+        if (channel.type == "text" && greetingChannel == "") {
+            if (channel.permissionsFor(guild.me).has("SEND_MESSAGES")) {
+                greetingChannel = channel;
+            }
+        }
+    })
+    greetingChannel.send("やっほー！　情クラ＠田舎鯖の稼働状況を伝えるbot Inaka-jk だよ！　よろしくね！");
+});
+
 // メッセージ受け取り時
 client.on("message", message => {
 
