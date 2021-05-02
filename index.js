@@ -8,7 +8,7 @@ client.on("ready", () => {
     client.user.setStatus("online"); //online, idle, dnd, invisible
     client.user.setActivity(`情クラ＠田舎鯖 `, {  //ステータスメッセージ
         // type: "STREAMING", //PLAYING: WATCHING: LISTENING: STREAMING: // unused?
-        url: ""
+        url: "https://jokura.work/"
     });
     console.log("ready...");
 });
