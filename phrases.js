@@ -3,4 +3,7 @@ exports.guildCreateGreeting = "やっほー！　情クラ＠田舎鯖の稼働�
 
 // greetings
 exports.goodMorning = "おはよー！";
-//exports.
+
+// commands
+exports.restartFail = "ごっめーん、再起動できなかった……\nエラーでたから置いとくね……";
+exports.restartSuccess = "おっけー！サーバーを再起動するよ！";
