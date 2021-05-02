@@ -1,5 +1,6 @@
 # Inaka-jk
 Jokura-Inaka-Server Discord Bot
+
 version 0.2.0
 
 ## Installation
