@@ -7,6 +7,7 @@ version 0.2.0
 
 - Discordのボットを作成します。
 - Minecraftサーバーとして使うサーバーにこのリポジトリをクローンします。
+- クローンしたディレクトリで`npm install discord.js`と実行します。→ [参考: discord.jsのインストール - Discord.js ガイド](https://guide.discordjs-japan.org/preparations/#discord-js%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
 - `.env.sample`の中身を書き換えたものを`.env`として保存します。
 - Minecraftサーバーの起動、再起動、終了用のシェルスクリプトにそれぞれ`index.js`を起動、終了させるコマンドを追加します。（screen等）
 - シェルスクリプトを実行します。
