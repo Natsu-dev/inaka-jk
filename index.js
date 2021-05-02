@@ -7,7 +7,7 @@ const client = new Discord.Client();
 
 client.on("ready", () => {
     client.user.setStatus("online"); //online, idle, dnd, invisible
-    client.user.setActivity(`情クラ＠田舎鯖 ` //, {  //ステータスメッセージ
+    client.user.setActivity(phrases.activity //, {  //ステータスメッセージ
         // type: "STREAMING", //PLAYING: WATCHING: LISTENING: STREAMING: // unused?
         //url: "" }
     );
