@@ -1,6 +1,6 @@
 {
     "name": "inaka-jk",
-    "version": "0.2.0",
+    "version": "0.2.5",
     "description": "Jokura-Inaka-Server Discord Bot",
     "main": "index.js",
     "scripts": {
