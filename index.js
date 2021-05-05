@@ -14,26 +14,26 @@ client.on("ready", () => {
         // type: "STREAMING", //PLAYING: WATCHING: LISTENING: STREAMING: // unused?
         //url: "" }
     );
-    if (fs.existsSync("manual-restart.json")) {
-
-        var data = JSON.parse(fs.readFileSync("manual-restart.json", 'utf8'));
-
-        time = new Date(data.time);
-        nowtime = new Date();
-
-        // 5分以内に再起動が行われていてかつ再起動が未完了のとき
-        if (nowtime <= Date(time.setMinutes(Date(time.getMinutes()) + 5)) && data.finished === false) {
-
-            data.finished = true;
-
-            data.channel.send(phrases.afterRestart)
-                .then(message => console.log(`Restart done.`))
-                .catch(console.error);
-
-            fs.writeFileSync("manual-restart.json", JSON.stringify(data, null, 4))
-                .then(console.log("'manual-restart.json' updated.")); // 再起動完了を記録
-        }
-    }
+    //if (fs.existsSync("manual-restart.json")) {
+    //
+    //    var data = JSON.parse(fs.readFileSync("manual-restart.json", 'utf8'));
+    //
+    //    time = new Date(data.time);
+    //    nowtime = new Date();
+    //
+    //    // 5分以内に再起動が行われていてかつ再起動が未完了のとき
+    //    if (nowtime <= Date(time.setMinutes(Date(time.getMinutes()) + 5)) && data.finished === false) {
+    //
+    //        data.finished = true;
+    //
+    //        data.channel.send(phrases.afterRestart)
+    //            .then(message => console.log(`Restart done.`))
+    //            .catch(console.error);
+    //
+    //        fs.writeFileSync("manual-restart.json", JSON.stringify(data, null, 4))
+    //            .then(console.log("'manual-restart.json' updated.")); // 再起動完了を記録
+    //    }
+    //}
 
     console.log("ready...");
 });
